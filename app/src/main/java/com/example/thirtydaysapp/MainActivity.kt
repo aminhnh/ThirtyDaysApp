@@ -19,8 +19,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.KeyboardArrowDown
-import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -143,7 +143,7 @@ fun SpanishTopicItem(topic: SpanishTopic, modifier: Modifier = Modifier) {
                     .fillMaxWidth()
             ) {
                 Icon(
-                    imageVector = if (showDescription) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown,
+                    imageVector = if (showDescription) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
                     contentDescription = stringResource(R.string.expand_button_description),
                     tint = MaterialTheme.colorScheme.secondary
                 )
